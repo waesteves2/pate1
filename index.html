@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html style="width: 21cm; height: 29.7cm;">
+
+<style>form{
+
+    border-radius: 2px;
+    border-color: blue;
+    text-align: center;
+}
+
+.nome{
+
+    width: 200px;
+
+    display:inline-flex; margin: 5px;
+    
+    
+
+}
+
+.end{
+
+    width: 250px;
+
+        display:inline-flex; margin: 5px;
+    
+}
+
+#cpf{
+
+    width: 120px;
+}
+
+#Bairro{
+
+    width: 120px;
+}
+.cid{
+
+    width: 100px;
+    margin: 5px;
+}
+
+.tel{
+
+    width: 100px;
+    margin: 5px;
+}
+
+p{
+
+    text-align: center;
+}
+
+head{
+
+    text-align: center;
+}
+
+html{
+
+    border: solid;
+    border-color: rgb(51, 51, 97);
+    border-radius: 5px;
+    margin:auto;
+    
+}
+
+h1,h2{
+
+    text-align: center;
+}
+.gerar{
+
+    background-color: rgb(52, 192, 235);
+    width: 130px;
+    margin-left: 600px;
+    border-radius: 5px;
+    font-size: 13px;
+    text-align: center;
+
+
+}
+.gerar:visited{
+
+    border-color: black;
+
+}
+
+.gerar:hover{
+
+    padding: 2px;
+}
+.qr{
+
+    text-align: center ;
+
+    margin-left: 30px;
+}
+</style>
+
+
+<link rel="stylesheet" href="./style3.css">
+
+<head lang="PT-br" style="text-align: justify;">
+
+    <img src="https://uploads-ssl.webflow.com/623201a0da52900bfc863055/63485366c15643d2f025dea6_logo-rodonaves.png" width="150" height="50" alt="">
+
+
+    <meta charset="UTF-8">
+
+    <P><b>Declaração de Natureza e Valor de Conteúdo<br>
+        (para transportes de encomendas não comerciáveis)</b></P>
+
+    Declaro para os devidos fins de direito e sob as penas da lei, que os volumes abaixo relacionados, por mim entregues
+    como encomendas, à RODONAVES TRANSPORTES E ENCOMENDAS LTDA., contém apenas objetos de uso pessoal. Neles não são
+    conduzidas nem correspondências a constituir monopólio postal da União, nem mercadorias destinadas a
+    comercializações, sujeitas a tributos municipais, estaduais ou federais, nem drogas, objetos ou produtos perigosos
+    relacionados na NORMA BRASILEIRA NBR-7502, cujo teor é do meu conhecimento, ou outros que oferecem risco à saúde ou
+    à segurança das pessoas que no veículo são transportadas, ou mesmo de terceiros que sejam obrigados a manipula-los.
+    Responsabilizo-me, integralmente, por quaisquer ônus ou prejuízos que de seu transporte possam decorrer, inclusive
+    em caso de apreensão e aplicação de multas. Declaro, ainda, isenta a RODONAVES, do ressarcimento, que possa ocorrer
+    da mercadoria por não estar embalada adequadamente.
+
+
+</head>
+<hr>
+
+<body style="font-family: monospace;">
+
+    <h1>INFORMAÇÕES DA DECLARAÇÃO</h1>
+
+    <form>
+        <input style="text-align: center;" type="Vol" name="VOLUMES" value="VOLUMES" readonly><input
+            style="text-align: center;" type="PesoKG" name="PESO" value="PESO Kg" readonly><input
+            style="text-align: center;" type="Valor" name="VALOR" value="VALOR R$" readonly><input
+            style="text-align: center;" type="Descrição" name="DISCRIMINAÇÃO" value="DISCRIMINAÇÃO" readonly><br>
+        <input style="text-align: center;" type="Vol"><input style="text-align: center;" type="PesoKG"><input
+            style="text-align: center;" type="Valor"><input style="text-align: center;" type="Descrição"><br>
+        <input style="text-align: center;" type="Vol"><input type="PesoKG"><input style="text-align: center;"
+            type="Valor"><input style="text-align: center;" type="Descrição"><br>
+    </form>
+
+    <br>
+
+    <div style="font-family: monospace;">
+
+        <h2>REMETENTE</h2>
+
+        Nome:<input type="text" class="nome" onkeyup="this.value = this.value.toUpperCase();"><label for="cpf"
+            class="cpf">CPF:</label>
+        <input type="text" id="cpf" onkeyup="this.value = this.value.toUpperCase();">
+        <br>
+        Ende:<input type="text" class="end" onkeyup="this.value = this.value.toUpperCase();"><label
+            for="end">Bairro</label>
+        <input type="text" id="bairro" onkeyup="this.value = this.value.toUpperCase();">
+        <br>
+        Cidade:<input type="text" class="cid" onkeyup="this.value = this.value.toUpperCase();"><label
+            for="cidade"></label>
+        <br>
+        Tel:<input type="text" onkeyup="this.value = this.value.toUpperCase();" class="tel"><br>
+
+
+    </div>
+
+    <br>
+    <br>
+    <hr>
+
+    <h2>DESTINATÁRIO</h2>
+    Nome:<input type="text" class="nome" onkeyup="this.value = this.value.toUpperCase();"><label for="cpf"
+        class="cpf">CPF:</label>
+    <input type="text" id="cpf" onkeyup="this.value = this.value.toUpperCase();">
+    <br>
+    Ende:<input type="text" class="end" onkeyup="this.value = this.value.toUpperCase();"><label for="end">Bairro</label>
+    <input type="text" id="bairro" onkeyup="this.value = this.value.toUpperCase();">
+    <br>
+    Cidade:<input type="text" class="cid" onkeyup="this.value = this.value.toUpperCase();"><label for="cidade"></label>
+    <br>
+    Tel:<input type="text" onkeyup="this.value = this.value.toUpperCase();" class="tel"><br>
+
+    <br>
+    <br>
+    <hr>
+   
+
+    
+
+    <label for="data">Data:</label>
+    <input type="text" id="data" readonly>
+    <br>
+    <label for="hora">Hora:</label>
+    <input type="text" id="hora" readonly>
+
+    <script>
+        var data = document.getElementById("data");
+        var hora = document.getElementById("hora");
+        var dataAtual = new Date();
+        data.value = dataAtual.toLocaleDateString();
+        hora.value = dataAtual.toLocaleTimeString();
+    </script>
+    <br>
+    <br>
+
+    
+    
+    <h3>PAGADOR DE FRETE REMETENTE</h3> 
+
+
+    <div class="qr">
+
+        <div class="qrcode"></div><h4>CHAVE PIX</h4>
+
+
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA
+        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"
+            width="100" height="100" alt="">
+    </div>
+
+        <div class="gerar">
+
+            <a href="./parte2.html"> Gerar Etiqueta</a>
+    
+            </div>
+       
+        
+        
+
+
+        
+        
+
+        
+                
+
+</body>
+
+</html>
